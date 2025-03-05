@@ -1,60 +1,78 @@
 ---
 slug: customization
-title: How to Customize this Template
+title: Impacto de los Aluviones en Ecuador y Resiliencia Comunitaria
 date: 2023-04-22T21:55:27.154Z
-excerpt: How to customize what you're seeing here and make it your own.
-coverImage: /images/posts/customization.jpg
+excerpt: Exploramos cómo los aluviones han moldeado la geografía y la sociedad ecuatoriana, desde su impacto histórico hasta las estrategias de adaptación y prevención.
+coverImage: /images/posts/aluviones-resiliencia.jpg
 tags:
-  - Documentation
+  - Desastres Naturales
+  - Aluviones
+  - Resiliencia
 ---
 
-In general, content can be modified by editing the **organisms** and the pages themselves. Below is a list of the most common changes that you may want to make.
+<script>
+  import Callout from "$lib/components/molecules/Callout.svelte";
+  import CodeBlock from "$lib/components/molecules/CodeBlock.svelte";
+  import Image from "$lib/components/atoms/Image.svelte";
+</script>
 
-## Domain/site URL
+## 🌎 Geografía y Zonas Vulnerables
 
-The first thing you might want to do is replace the domain of of the site with your own. There are two places where you need to do that:
+Ecuador es un país altamente expuesto a **fenómenos hidro-meteorológicos extremos** debido a su ubicación geográfica y su variada topografía. Existen varias regiones del país donde los aluviones han ocurrido con mayor frecuencia:
 
-- In the `package.json` file, check the `postbuild` script. Change the domain there to your own, so it ends up like this: `svelte-sitemap --domain https://your-domain.com`. This is used to generate the sitemap of your website, which is used by search engines to index your site.
-- In the `src/lib/data/meta.ts` file, change the `siteBaseUrl` property to your own domain. This is used in multiple parts of the app wherever the site needs to link to itself.
+- **La Sierra**: Zonas montañosas con pendientes pronunciadas en provincias como **Pichincha, Tungurahua y Azuay** favorecen la acumulación de agua y deslizamientos de tierra.
+- **El Austro**: En **Loja y Cuenca**, las lluvias estacionales han desencadenado múltiples eventos de arrastre de sedimentos.
+- **El Oriente**: En regiones de la Amazonía ecuatoriana, los ríos pueden desbordarse y generar flujos de lodo en comunidades cercanas.
 
-## Header/site logo
+<Callout type="info">
+Los aluviones no solo afectan las grandes ciudades, sino también comunidades rurales con infraestructura más vulnerable.
+</Callout>
 
-To replace the logo that appears in the header, modify or replace the contents of the `Logo.svelte` atom.
+## 📜 Registros Históricos de Aluviones en Ecuador
 
-The links that appear on the header can be modified directly in the `Header.svelte` organism.
+Los desastres relacionados con aluviones han quedado registrados desde la época colonial. Algunos de los eventos más representativos incluyen:
 
-## Hero section
+- **Aluvión de Riobamba (1797):** Un fuerte terremoto en la zona andina provocó deslizamientos de tierra que soterraron parte de la ciudad.
+- **Aluvión de Ambato (1949):** Producto de un terremoto y lluvias intensas, afectó varias poblaciones cercanas.
+- **Aluvión de Guano (2003):** En la provincia de Chimborazo, este desastre dejó más de 15 muertos y numerosas viviendas destruidas.
+- **Aluvión en Zaruma (2021):** La minería ilegal y las lluvias provocaron colapsos de suelo y flujos de lodo en la ciudad patrimonial.
 
-The hero section is the first section of the site's home page. It is composed of a Heading, the _intro_ text, and a list of buttons/CTAs. The contents of this section can be modified directly in the `Hero.svelte` organism.
+<Callout type="warning">
+El cambio climático está aumentando la frecuencia e intensidad de lluvias extremas, incrementando el riesgo de nuevos aluviones.
+</Callout>
 
-## About section
+## 🏠 Impacto Social y Económico
 
-The about section contains another headline, a paragraph of text, some social media links, and optionally an image. The contents of this section can be modified directly in the `About.svelte` organism.
+Los aluviones afectan múltiples dimensiones de la vida en Ecuador:
 
-## Social Links
+- **Desplazamiento forzado:** Muchas familias pierden sus hogares y deben trasladarse a albergues temporales.
+- **Daños en infraestructura:** Se destruyen carreteras, puentes y sistemas de alcantarillado.
+- **Afectación a la economía local:** Comercios y actividades agrícolas sufren grandes pérdidas tras un desastre de este tipo.
+- **Crisis sanitarias:** El agua estancada y los escombros pueden generar brotes de enfermedades como dengue y leptospirosis.
 
-The social links are contained in the `Socials.svelte` molecule and can be used in any page. This template shows them on the About section and in the Footer.
+## 🔍 Medidas Gubernamentales y de la Sociedad Civil
 
-## Footer
+Desde 2010, Ecuador ha implementado estrategias para reducir el impacto de los aluviones:
 
-The footer contains some credits, a list of social links, and the RSS/Theme toggle. The contents of this section can be modified directly in the `Footer.svelte` organism.
+- **Planes de reubicación:** El Gobierno ha desarrollado proyectos de vivienda en zonas seguras para comunidades afectadas.
+- **Sistemas de drenaje mejorados:** En ciudades como Quito y Cuenca, se han construido colectores de agua lluvia para evitar colapsos de calles y avenidas.
+- **Tecnología satelital:** Se utilizan imágenes de radar para monitorear cambios en el terreno y predecir deslizamientos.
+- **Simulacros comunitarios:** En coordinación con la **Secretaría de Gestión de Riesgos**, se capacita a la población sobre evacuación y respuesta ante emergencias.
 
-## Colors
+<Image src="/images/posts/monitor-aluviones.jpg" alt="Monitoreo de aluviones en Ecuador mediante tecnología satelital" />
 
-You can change the color palette of the website just by tweaking the `_themes.scss` file. The file uses the `define-color` scss function to automatically set the color variables in Hex, RGB and HSL formats, so you can choose whichever format you need.
+## 📌 Lecciones Aprendidas y Futuro
 
-The main theme colors (primary and secondary) have two variants: shade and tint. The shade is a lighter version of the color (darker in dark mode), and the tint should almost match the page's background, so that in light mode, it's really bright, and in dark mode, it's really dark.
+A pesar de los avances en mitigación, Ecuador sigue enfrentando desafíos en la gestión de desastres naturales. Es crucial:
 
-## Fonts
+1. **Fomentar la educación ambiental:** Programas en escuelas y colegios pueden enseñar a los niños cómo actuar ante una emergencia.
+2. **Incluir a la comunidad en la planificación urbana:** Garantizar que la expansión de las ciudades considere los riesgos de aluviones.
+3. **Mayor financiamiento en prevención:** Construcción de muros de contención y sistemas de alerta temprana en más localidades.
 
-This template uses the Inter, Merriweather and Ubuntu Mono font families. You can change the font family by editing the `_variables.scss` file, and the code is already set up to accept a default font, a heading font, and a monospace font.
+<Callout type="success">
+La resiliencia comunitaria y la planificación adecuada pueden marcar la diferencia en la reducción de desastres futuros.
+</Callout>
 
-I recommend using [Fontsource](https://fontsource.org/) to import the fonts you need, or self-hosting them. In case you're using Fontsource, you can import the fonts in `global.scss` file to make sure they're available in the entire site.
+---
 
-## Favicon
-
-Favicons are located in the `static/favicons` folder. I like to use [Real Favicon Generator](https://realfavicongenerator.net) to generate mine, but you can use any other tool you like. I wrote [a blog post about Favicons](https://fantinel.dev/fixing-favicons) in case you want to learn more about them.
-
-## Social Media Link Preview
-
-You probably want to customize how links to your website look when posted on social media/messaging apps. To do that, you can edit the info in `src/lib/data/meta.ts`. There, you can edit the site's title, description, tags (used by search engines) and the image that appears when sharing a link.
+¿Quieres saber más sobre cómo las comunidades pueden prepararse ante los aluviones? Descubre más información en nuestro blog sobre **gestión de riesgos en Ecuador**.

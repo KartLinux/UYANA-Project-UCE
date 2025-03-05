@@ -7,23 +7,21 @@
 <section id="about">
 	<div class="info">
 		<h2>
-			This is a catchy headline that
-			<SparklingHighlight color="secondary">sparkles!</SparklingHighlight>
+			Descubre eventos históricos en Ecuador con
+			<SparklingHighlight color="secondary">mapas interactivos</SparklingHighlight>
 		</h2>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit voluptatibus commodi
-			autem provident quam labore, libero beatae praesentium voluptate?
+			Esta plataforma permite explorar eventos naturales en Ecuador desde 2010 hasta 2023, como
+			aluviones, terremotos e inundaciones. Utiliza filtros avanzados y gráficos dinámicos para
+			analizar tendencias y datos relevantes.
 		</p>
 		<div class="socials">
-			<span>Socials:</span>
+			<span>Redes Sociales:</span>
 			<Socials />
 		</div>
 	</div>
 	<div class="image">
-		<Image
-			src="/images/sample-image.png"
-			alt="Sample for the static template"
-		/>
+		<Image src="/images/mapa-aluviones.png" alt="Sample for the static template" />
 	</div>
 </section>
 
@@ -33,10 +31,10 @@
 	#about {
 		position: relative;
 		display: grid;
-		grid-template-columns: 500px 250px;
+		grid-template-columns: 500px 450px;
 		align-items: center;
 		justify-content: space-between;
-		padding-bottom: 50px;
+		padding-bottom: 10px;
 
 		@include for-phone-only {
 			grid-template-columns: 1fr;
@@ -80,8 +78,9 @@
 		}
 
 		.image {
-			width: 220px;
-			height: 220px;
+			width: 420px;
+			height: 320px;
+			border-radius: 50% 50% 50% 50%;
 		}
 	}
 </style>

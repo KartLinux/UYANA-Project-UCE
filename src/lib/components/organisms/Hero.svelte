@@ -6,21 +6,21 @@
 </script>
 
 <section id="hero">
-	<h1 class="hello">This is a SvelteKit Static Blog Template!</h1>
+	<h1 class="hello">¡Mapa Interactivo de Eventos en Ecuador!</h1>
 	<p class="intro">
-		<span class="left">It supports Markdown,</span>
-		<span class="right">and is really fast.</span>
+		<span class="left">Visualiza y analiza datos,</span>
+		<span class="right">sobre eventos naturales en Ecuador.</span>
 	</p>
 	<div class="ctas">
 		<Sparkles>
 			<Button href="https://github.com/matfantinel/sveltekit-static-blog-template">
 				<GitHubIcon slot="icon" />
-				Source Code
+				Código fuente
 			</Button>
 		</Sparkles>
-		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
+		<Button color="primary" href="/aboutUs">
 			<FeaturesIcon slot="icon" />
-			Components
+			Nosotros
 		</Button>
 	</div>
 </section>

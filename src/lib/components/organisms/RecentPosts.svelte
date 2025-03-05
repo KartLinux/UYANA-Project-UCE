@@ -9,12 +9,12 @@
 
 <ContentSection
 	id="recent-posts"
-	title="Blog posts"
-	description="This section shows the 4 most recent blog posts. Check them out for tips on how to get started!"
+	title="Últimos Reportes de Aluviones en Ecuador"
+	description="Explora los reportes más recientes sobre aluviones en diferentes regiones de Ecuador. Conoce las causas, impactos y medidas de prevención."
 	align="left"
 >
 	<div slot="button">
-		<Button href="/blog">View More</Button>
+		<Button href="/blog">Ver Más</Button>
 	</div>
 	<div class="grid">
 		{#each posts as post}

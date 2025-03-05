@@ -1,34 +1,43 @@
 <script lang="ts">
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
+	import InvestigacionesMap from '$lib/components/map/InvestigacionesMap.svelte';
 	import SparklingHighlight from '$lib/components/molecules/SparklingHighlight.svelte';
-	import { aluvionStore } from '$lib/stores/aluvion.store';
-	import AluvionesDashboard from '$lib/components/dashboard/AluvionesDashboard.svelte';
-	import AluvionClock from '$lib/components/molecules/AluvionClock.svelte';
 </script>
 
 <div class="container">
 	<ContentSection>
-		<br />
-		<br />
 		<div class="card-overlay">
 			<div class="header">
 				<h2>
-					
-					<SparklingHighlight color="primary">DASHBOARD</SparklingHighlight>
-					DE ALUVIONES
+					<SparklingHighlight color="primary">MAPA</SparklingHighlight>
+					DE INVESTIGACIONES
 				</h2>
-				<p>Periodo 2010-2023</p>
 			</div>
-
-			<AluvionesDashboard aluviones={$aluvionStore.aluviones} />
-
-			<AluvionClock />
+			<InvestigacionesMap />
 		</div>
 	</ContentSection>
 </div>
 
 <style lang="scss">
 	@import '$lib/scss/breakpoints.scss';
+
+	.container {
+		max-width: var(--size-content-width);
+		margin: 0 auto;
+		padding: 2rem 1rem;
+	}
+
+	.header {
+		text-align: center;
+		margin-bottom: 2rem;
+
+		h2 {
+			font-family: var(--font--title);
+			font-size: 1.8rem;
+			margin-bottom: 1rem;
+			color: var(--color--text);
+		}
+	}
 
 	.card-overlay {
 		position: relative;
@@ -49,23 +58,6 @@
 		}
 
 		animation: float 6s ease-in-out infinite;
-	}
-
-	.header {
-		text-align: center;
-		margin-bottom: 2rem;
-
-		h2 {
-			font-family: var(--font--title);
-			font-size: 1.8rem;
-			margin-bottom: 1rem;
-			color: var(--color--text);
-		}
-
-		p {
-			color: var(--color--text-shade);
-			font-size: 1.1rem;
-		}
 	}
 
 	@keyframes float {

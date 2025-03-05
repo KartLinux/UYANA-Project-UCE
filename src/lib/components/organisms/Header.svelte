@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Logo from '$lib/components/atoms/Logo.svelte';
 	import ThemeToggle from '$lib/components/molecules/ThemeToggle.svelte';
-	import RssLink from '$lib/components/atoms/RssLink.svelte';
 	import { slide } from 'svelte/transition';
 	import Building from '../atoms/Building.svelte';
 
@@ -31,33 +30,38 @@
 				<a href="/monitor" on:click={toggleMenu}>Monitor</a>
 				<a href="/timeline" on:click={toggleMenu}>Linea de Tiempo</a>
 				<a href="/map" on:click={toggleMenu}>Mapa</a>
+				<a href="/mapinvestigation" on:click={toggleMenu}>Mapa de Investigaciones</a>
 				<a href="/blog" on:click={toggleMenu}>Blog</a>
 				<a href="/contactUs" on:click={toggleMenu}>Contáctanos</a>
 				<a href="/aboutUs" on:click={toggleMenu}>Sobre Nosotros</a>
 			</div>
 			<div class="mobile-tools">
-				<RssLink />
+				<Building />
 				<ThemeToggle />
 			</div>
 		</div>
 
 		<!-- Menú desktop -->
 		<div class="links desktop-only">
-			<a href="/monitor">Monitor</a>
+			<a href="/monitor">Mon.</a>
 		</div>
 		<div class="links desktop-only">
-			<a href="/timeline">Linea de Tiempo</a>
+			<a href="/timeline">Hist.</a>
 		</div>
 		<div class="links desktop-only">
 			<a href="/map">Mapa</a>
 		</div>
 
 		<div class="links desktop-only">
-			<a href="/contactUs">Contáctanos</a>
+			<a href="/mapinvestigation">Proy.</a>
 		</div>
 
 		<div class="links desktop-only">
-			<a href="/aboutUs">Sobre Nosotros</a>
+			<a href="/contactUs">Cont.</a>
+		</div>
+
+		<div class="links desktop-only">
+			<a href="/aboutUs">Nos.</a>
 		</div>
 
 		<div class="links desktop-only">
@@ -65,6 +69,9 @@
 			<Building />
 			<ThemeToggle />
 		</div>
+
+		
+		
 	</nav>
 </header>
 
