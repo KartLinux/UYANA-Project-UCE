@@ -2,42 +2,45 @@ import type { Feature } from "$lib/utils/types";
 
 export default [ 
   {
-    name: 'Markdown Support',
+    name: 'Monitoreo Hidrometeorológico',
     description:
-      'Blog posts are written in Markdown, a simple and nearly-universal format. This means you can bring over your posts from other platforms, and easily export to another if you want to.',
-    image: 'images/features/markdown.jpg',
-    tags: [{ label: 'Powered by MDsveX' }]
+      'El INAMHI realiza un monitoreo constante de lluvias y condiciones climáticas para anticipar posibles aluviones en las regiones vulnerables de Ecuador.',
+    image: 'images/features/monitoreo.jpg',
+    tags: [{ label: 'Prevención' }, { label: 'Monitoreo' }]
   }, 
   {
-    name: 'Themeable',
+    name: 'Sistemas de Alerta Temprana',
     description:
-      'You can easily theme the entire website by changing just a few colors in the _themes.scss file.',
-    image: 'images/features/themeable.jpg',
-    tags: [{ label: 'Primary Color' }, { label: 'Secondary Color', color: 'secondary' }]
+      'En comunidades de alto riesgo se implementan sirenas y sistemas de alerta que avisan ante lluvias extremas y posibles aluviones.',
+    image: 'images/features/alerta-temprana.jpg',
+    tags: [{ label: 'Alerta' }, { label: 'Seguridad' }]
   }, 
   {
-    name: 'Extensible',
+    name: 'Planes de Contingencia',
     description:
-      'Components are built to be reused, and you can build new pages and layouts without much CSS knowledge. You can see all components in Histoire by running "npm run story:dev"',
-    image: 'images/features/extensible.jpg',
+      'Gobiernos locales y comunitarios desarrollan planes de contingencia que incluyen simulacros, rutas de evacuación y centros de acopio.',
+    image: 'images/features/plan-contingencia.jpg',
+    tags: [{ label: 'Preparación' }, { label: 'Resiliencia' }]
   }, 
   {
-    name: 'Well Optimized',
+    name: 'Reforestación y Control de Erosión',
     description:
-      'Images are automatically optimized and lazy loaded, to ensure the website loads as fast as possible regardless of connection speed.',
-    image: 'images/features/optimized.jpg',
-    tags: [{ label: 'Powered by Image Transmutation' }]
+      'Programas de reforestación en cuencas hidrográficas reducen la erosión y mejoran la capacidad de absorción de agua, ayudando a prevenir aluviones.',
+    image: 'images/features/reforestacion.jpg',
+    tags: [{ label: 'Medio Ambiente' }, { label: 'Mitigación' }]
   }, 
   {
-    name: 'Light and Dark Modes',
+    name: 'Coordinación Interinstitucional',
     description:
-      'This template was built with dark mode in mind. It can swap between themes automatically (based on system settings) or manually. Both themes can be tweaked in the _themes.scss file.',
-    image: 'images/features/light-dark.jpg',
+      'El COE Nacional, Provincial y Cantonal trabaja de forma coordinada para gestionar emergencias por aluviones y coordinar la respuesta rápida.',
+    image: 'images/features/coe-coordinacion.jpg',
+    tags: [{ label: 'COE' }, { label: 'Coordinación' }]
   },
   {
-    name: 'Open Source',
+    name: 'Capacitación Comunitaria',
     description:
-      'All code is open source, which means you can copy and modify it to your heart\'s content. All I ask is that you make your code open too so that knowledge can be passed on.',
-    image: 'images/features/open-source.jpg'
+      'Las comunidades reciben capacitaciones constantes sobre cómo actuar ante aluviones, identificando zonas seguras y aprendiendo a evacuar correctamente.',
+    image: 'images/features/capacitacion.jpg',
+    tags: [{ label: 'Educación' }, { label: 'Resiliencia' }]
   },
 ] as Feature[];

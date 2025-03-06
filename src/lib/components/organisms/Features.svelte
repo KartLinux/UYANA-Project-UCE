@@ -8,8 +8,8 @@
 
 <ContentSection
 	id="features"
-	title="Features"
-	description="Here are some of the features of this template"
+	title="Características"
+	description="Características de monitoreo y gestión de riesgos"
 >
 	<div class="features-container">
 		<div class="three-group-grid">
