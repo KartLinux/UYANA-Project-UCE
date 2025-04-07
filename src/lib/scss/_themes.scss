@@ -1,9 +1,9 @@
 @import '$lib/scss/_mixins.scss';
 
 @mixin base-theme {
-	@include define-color('primary', #ff571a);
-	@include define-color('primary-shade', #ffa280);	
-	@include define-color('primary-tint', #fff8f5);
+	@include define-color('primary', #31ff1a);
+	@include define-color('primary-shade', #6b0505);
+	@include define-color('primary-tint', #545454);
 
 	@include define-color('secondary', #6E29E7);
 	@include define-color('secondary-shade', #b28cf2);
@@ -45,8 +45,8 @@
 }
 
 @mixin dark-theme {
-	@include define-color('primary', #ff723f);
-	@include define-color('primary-shade', #AB3307);	
+	@include define-color('primary', #7dff1a);
+	@include define-color('primary-shade', #38ab07);
 	@include define-color('primary-tint', #1b1918);
 
 	@include define-color('secondary', #9f67ff);

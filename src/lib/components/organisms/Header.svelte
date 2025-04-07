@@ -43,25 +43,25 @@
 
 		<!-- Menú desktop -->
 		<div class="links desktop-only">
-			<a href="/monitor">Mon.</a>
+			<a href="/monitor">Monitor</a>
 		</div>
 		<div class="links desktop-only">
-			<a href="/timeline">Hist.</a>
+			<a href="/timeline">Hist</a>
 		</div>
 		<div class="links desktop-only">
 			<a href="/map">Mapa</a>
 		</div>
 
 		<div class="links desktop-only">
-			<a href="/mapinvestigation">Proy.</a>
+			<a href="/mapinvestigation">Proyectos</a>
 		</div>
 
 		<div class="links desktop-only">
-			<a href="/contactUs">Cont.</a>
+			<a href="/contactUs">Contacto</a>
 		</div>
 
 		<div class="links desktop-only">
-			<a href="/aboutUs">Nos.</a>
+			<a href="/aboutUs">Nosotros</a>
 		</div>
 
 		<div class="links desktop-only">

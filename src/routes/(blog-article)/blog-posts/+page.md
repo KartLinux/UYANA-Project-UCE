@@ -1,11 +1,11 @@
 ---
-title: Aluviones en Ecuador Historia, Causas y Consecuencias
+title: Proyectos
 slug: blog-posts
 coverImage: /images/posts/causas-consecuencias.jpg
 date: 2023-04-22T21:55:15.361Z
 excerpt: Conoce los aluviones más impactantes ocurridos en Ecuador, sus causas, consecuencias y las medidas de prevención adoptadas.
 tags:
-  - Aluviones
+  - Investigacion
   - Desastres Naturales
   - Ecuador
 ---

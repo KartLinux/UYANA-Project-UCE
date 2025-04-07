@@ -111,7 +111,7 @@
   .flip-card-back {
     transform: rotateY(180deg);
     background: var(--color--primary);
-    color: white;
+    color: rgb(1, 1, 1);
 
     p {
       line-height: 1.6;

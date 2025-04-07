@@ -6,10 +6,9 @@
 </script>
 
 <section id="hero">
-	<h1 class="hello">¡Mapa Interactivo de Eventos en Ecuador!</h1>
+	<h1 class="hello">¡UCE en el Mapa: Explora los Proyectos que Transforman el Conocimiento!</h1>
 	<p class="intro">
-		<span class="left">Visualiza y analiza datos,</span>
-		<span class="right">sobre eventos naturales en Ecuador.</span>
+		<span class="center">Un mapa, miles de historias de innovación.</span>
 	</p>
 	<div class="ctas">
 		<Sparkles>
@@ -57,6 +56,9 @@
 			}
 			.right {
 				text-align: right;
+			}
+			.center {
+				text-align: center;
 			}
 
 			@include for-phone-only {

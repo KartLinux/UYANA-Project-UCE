@@ -2,17 +2,19 @@
 	import SparklingHighlight from '$lib/components/molecules/SparklingHighlight.svelte';
 	import Socials from '$lib/components/molecules/Socials.svelte';
 	import Image from '../atoms/Image.svelte';
+	import Sparkles from '../atoms/Sparkles.svelte';
+	import Button from '$lib/components/atoms/Button.svelte';
 </script>
 
 <section id="about">
 	<div class="info">
 		<h2>
-			Descubre eventos históricos en Ecuador con
+			Descubre proyectos de la Universidad con
 			<SparklingHighlight color="secondary">mapas interactivos</SparklingHighlight>
 		</h2>
 		<p>
-			Esta plataforma permite explorar eventos naturales en Ecuador desde 2010 hasta 2023, como
-			aluviones, terremotos e inundaciones. Utiliza filtros avanzados y gráficos dinámicos para
+			Esta plataforma permite explorar proyectos de la Universidad Central del Ecuador desde 2010 hasta 2025, todo 
+			lo que se esta realiando en los diferentes campos de la Investigación. Utiliza filtros avanzados y gráficos dinámicos para
 			analizar tendencias y datos relevantes.
 		</p>
 		<div class="socials">
@@ -21,7 +23,11 @@
 		</div>
 	</div>
 	<div class="image">
-		<Image src="/images/mapa-aluviones.png" alt="Sample for the static template" />
+		<Sparkles>
+			<Button href="/">
+				<Image src="/images/img_UCE_inicio.png" alt="Sample for the static template" />
+			</Button>
+		</Sparkles>
 	</div>
 </section>
 
@@ -79,8 +85,10 @@
 
 		.image {
 			width: 420px;
-			height: 320px;
-			border-radius: 50% 50% 50% 50%;
+			height: 270px;
+			border-radius: 4%;
+			/*border: 10px solid rgb(25, 0, 78); /* Esto agrega un marco negro de 10px de grosor */
+    		/*box-sizing: border-box; /*Asegura que el borde no afecte el tamaño total del elemento */
 		}
 	}
 </style>

@@ -9,8 +9,8 @@
 
 <ContentSection
 	id="recent-posts"
-	title="Últimos Reportes de Aluviones en Ecuador"
-	description="Explora los reportes más recientes sobre aluviones en diferentes regiones de Ecuador. Conoce las causas, impactos y medidas de prevención."
+	title="Proyectos destacados de la Universidad"
+	description="Explora las investigaciones que se han realido. Conoce el impacto que ha tenido en la sociedad y en la comunidad universitaria."
 	align="left"
 >
 	<div slot="button">
