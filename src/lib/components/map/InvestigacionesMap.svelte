@@ -3,6 +3,7 @@
 	import { browser } from '$app/environment';
 	import { investigacionesStore } from '$lib/stores/investigaciones.store';
 	import type { Feature } from 'geojson'; // Importa el tipo Feature de GeoJSON
+	import LineaTiempo from './lineaTiempo.svelte';
 	import type { Investigacion } from '$lib/types/investigaciones.types';
 
 	let mapElement: HTMLDivElement;
@@ -375,6 +376,13 @@
 		crossorigin=""
 	/>
 </svelte:head>
+<div class="container-lineaTiempo">
+	<LineaTiempo
+	  minYear={1900}
+	  maxYear={2025}
+	  initialYear={2020}
+	/>
+</div>
 
 <div class="main-container">
 	<!-- Filtros -->
@@ -572,6 +580,11 @@
 		border-radius: 50%;
 		display: block;
 	}
+	.container-lineaTiempo {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  	}
 
 	/* Estilos responsivos */
 	@media (max-width: 768px) {
